@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#001214]">
+      <div className="bg-[#02010A]">
 
         <BlurBlob position={{top: '35%', left: '20%'}} size={{width: '20%', height: '30%'}}></BlurBlob>
         

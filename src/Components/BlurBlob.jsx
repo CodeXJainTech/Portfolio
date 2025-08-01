@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BlurBlob = ({ position, size, color = '#00FFFF' }) => {
+const BlurBlob = ({ position, size, color = '#0077B6' }) => {
   // Destructure position and size
   const { top, left } = position;
   const { width, height } = size;

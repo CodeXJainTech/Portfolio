@@ -1,5 +1,5 @@
 import React from "react";
-import { experiences } from "../../contents"; // Import your data
+import { experiences } from "../../contents";
 
 const Experience = () => {
   return (
@@ -7,23 +7,22 @@ const Experience = () => {
       id="experience"
       className="py-20 pb-24 px-[7vw] md:px-[7vw] lg:px-[15vw] font-sans pt-20"
     >
-      {/* ------------------- Section Title ------------------- */}
+      {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
-        <div className="w-48 h-1 bg-[#00FFFF] mx-auto mt-4"></div>
-        <p className="text-gray-300 mt-4 text-lg font-semibold">
+        <h2 className="text-4xl font-bold text-[#ADE8F4]">EXPERIENCE</h2>
+        <div className="w-48 h-1 bg-[#0077B6] mx-auto mt-4"></div>
+        <p className="text-[#E0F1FF] mt-4 text-lg font-semibold">
           This section highlights my professional experience across various
           organizations, along with the roles, responsibilities, and
           achievements I have accomplished during my journey.
         </p>
       </div>
 
-      {/* ------------------- Experience Timeline ------------------- */}
+      {/* Timeline */}
       <div className="relative">
-        {/* Vertical Timeline Line */}
-        <div className="absolute lg:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-[#00FFFF] h-full"></div>
+        {/* Vertical Line */}
+        <div className="absolute lg:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-[#0077B6] h-full"></div>
 
-        {/* ------------------- Experience Entries ------------------- */}
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
@@ -31,8 +30,8 @@ const Experience = () => {
               index % 2 === 0 ? "lg:justify-end" : "lg:justify-start"
             }`}
           >
-            {/* Timeline Circle (with company logo) */}
-            <div className="absolute lg:left-1/2 left-0 transform -translate-x-1/2 bg-white border-4 border-[#00FFFF] w-12 h-12 lg:w-16 lg:h-16 rounded-full flex justify-center items-center z-10">
+            {/* Circle with Logo */}
+            <div className="absolute lg:left-1/2 left-0 transform -translate-x-1/2 bg-white border-4 border-[#0077B6] w-12 h-12 lg:w-16 lg:h-16 rounded-full flex justify-center items-center z-10">
               <img
                 src={experience.img}
                 alt={experience.company}
@@ -40,15 +39,14 @@ const Experience = () => {
               />
             </div>
 
-            {/* ------------------- Experience Card ------------------- */}
+            {/* Experience Card */}
             <div
-              className={`w-full lg:max-w-md p-4 lg:p-8 rounded-2xl border border-white bg-[#0a0a1a] backdrop-blur-md shadow-[0_0_25px_5px_rgba(0,255,255,0.2)] transform transition-transform duration-300 hover:scale-105 ${
+              className={`w-full lg:max-w-md p-4 lg:p-8 rounded-2xl border border-[#0077B6] bg-[#050414] shadow-[0_0_25px_5px_rgba(0,119,182,0.3)] transition-transform duration-300 hover:scale-105 ${
                 index % 2 === 0 ? "lg:ml-10" : "lg:mr-10"
               } lg:ml-0 ml-12`}
             >
-              {/* -------- Card Header (Logo + Info) -------- */}
+              {/* Header */}
               <div className="flex items-center space-x-6">
-                {/* Company Logo */}
                 <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
                   <img
                     src={experience.img}
@@ -56,34 +54,32 @@ const Experience = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-
-                {/* Role, Company, Date */}
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold text-white">
+                    <h3 className="text-xl lg:text-2xl font-semibold text-[#E0F1FF]">
                       {experience.role}
                     </h3>
-                    <h4 className="text-md lg:text-sm text-gray-300">
+                    <h4 className="text-md lg:text-sm text-[#ADE8F4]">
                       {experience.company}
                     </h4>
                   </div>
-                  <p className="text-sm text-gray-400 mt-2">
+                  <p className="text-sm text-[#90AFC0] mt-2">
                     {experience.date}
                   </p>
                 </div>
               </div>
 
-              {/* -------- Role Description -------- */}
-              <p className="mt-4 text-gray-300">{experience.desc}</p>
+              {/* Description */}
+              <p className="mt-4 text-[#E0F1FF]">{experience.desc}</p>
 
-              {/* -------- Skills Tags -------- */}
+              {/* Skills */}
               <div className="mt-4">
-                <h5 className="font-medium text-white">Skills:</h5>
+                <h5 className="font-medium text-[#ADE8F4]">Skills:</h5>
                 <ul className="flex flex-wrap mt-2">
                   {experience.skills.map((skill, index) => (
                     <li
                       key={index}
-                      className="bg-[#00FFFF] text-[#001214] px-4 py-1 text-xs lg:text-sm rounded-lg mr-2 mb-2 border border-white hover:bg-[#00e6e6] transition"
+                      className="bg-[#0077B6] text-black font-bold px-4 py-1 text-xs lg:text-sm rounded-lg mr-2 mb-2 border border-white hover:bg-[#48CAE4] transition"
                     >
                       {skill}
                     </li>
@@ -91,7 +87,6 @@ const Experience = () => {
                 </ul>
               </div>
             </div>
-            {/* ------------------- End of Experience Card ------------------- */}
           </div>
         ))}
       </div>
