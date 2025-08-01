@@ -8,9 +8,6 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#050414] text-[#E0F1FF] py-10 px-6 text-center">
-      {/* Divider */}
-      <div className="w-full h-1 bg-[#0077B6] my-4"></div>
-
       {/* Name */}
       <h2 className="text-2xl font-bold text-[#0077B6] mb-4">Anchal Jain</h2>
 
