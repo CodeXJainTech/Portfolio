@@ -45,10 +45,7 @@ const About = () => {
 
           {/* ------------ About Description ------------ */}
           <p className="text-base sm:text-lg md:text-lg mt-8 leading-relaxed text-[#E0F1FF]">
-            I’m an IIITian and Computer Science student passionate about building impactful tech
-            solutions. I specialize in full-stack development and explore AI/ML to solve real-world
-            problems. As an active competitive programmer, I continuously sharpen my problem-solving
-            and algorithmic skills.
+            I'm a Computer Science student at IIITB, passionate about building impactful tech solutions. I specialize in full-stack development and explore AI/ML to tackle real-world challenges. I'm also an active competitive programmer, consistently working on improving my algorithmic thinking.
           </p>
 
           {/* -----------Coding Profiles---------------- */}
