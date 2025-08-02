@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[10vw] ${
-        isScrolled
+        isScrolled && !isOpen
           ? "bg-[#050414] bg-opacity-80 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
@@ -97,8 +97,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-  <div className="fixed top-0 left-0 w-full h-screen bg-[#050414]/90 backdrop-blur-lg z-40 md:hidden">
-    <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-90 rounded-lg shadow-lg">
+  <div className="fixed top-0 left-0 w-full h-screen  backdrop-blur-lg bg-white/15 z-40 md:hidden">
+    <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414]/90 rounded-lg shadow-lg">
       <ul className="flex flex-col items-center space-y-4 py-4 text-[#ADE8F4]">
         {menuItems.map((item) => (
           <li
