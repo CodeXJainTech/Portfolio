@@ -59,7 +59,7 @@ const About = () => {
                 href={profile.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center rounded-lg bg-[#050414] border border-[#0077B6] backdrop-blur-md transition-transform duration-300 hover:scale-105 shadow-[0_0_10px_rgba(0,119,182,0.3)]"
+                className="w-12 h-12 flex items-center justify-center rounded-lg bg-[#050414] backdrop-blur-md transition-transform duration-300 hover:scale-105 shadow-[0_0_10px_rgba(0,119,182,0.3)]"
               >
                 <img
                   src={profile.logo}

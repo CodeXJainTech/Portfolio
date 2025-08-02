@@ -17,7 +17,7 @@ const Footer = () => {
           href="https://linkedin.com"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-[#48CAE4] transition-colors"
+          className="hover:text-[#0077B6] transition-colors"
         >
           <FaLinkedin />
         </a>
@@ -25,13 +25,13 @@ const Footer = () => {
           href="https://github.com"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-[#48CAE4] transition-colors"
+          className="hover:text-[#0077B6] transition-colors"
         >
           <FaGithub />
         </a>
         <a
           href="mailto:jainanchal0611@gmail.com"
-          className="hover:text-[#48CAE4] transition-colors"
+          className="hover:text-[#0077B6] transition-colors"
         >
           <FaEnvelope />
         </a>
@@ -40,7 +40,7 @@ const Footer = () => {
       {/* Back to Top */}
       <button
         onClick={scrollToTop}
-        className="inline-flex items-center text-sm text-[#ADE8F4] hover:text-[#48CAE4] transition-colors duration-300 mb-4"
+        className="inline-flex items-center text-sm text-[#ADE8F4] hover:text-[#0077B6] transition-colors duration-300 mb-4"
       >
         <FaArrowUp className="mr-2" /> Back to Top
       </button>
