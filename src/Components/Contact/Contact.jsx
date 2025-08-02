@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 pb-24 px-[7vw] md:px-[7vw] lg:px-[15vw] font-sans pt-20 bg-[#02010A]"
+      className="py-20 px-20 font-sans mt-20 mb-20 mx-10 md:mx-96 bg-white/5 rounded-3xl"
     >
       {/* ----------------Section start---------------- */}
       <div className="text-center mb-16">
