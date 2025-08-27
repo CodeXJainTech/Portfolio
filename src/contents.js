@@ -20,11 +20,13 @@ import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import colabLogo from './assets/tech_logo/colab.png';
 import jupyterLogo from './assets/tech_logo/jupyter.png';
-import bankingLogo from './assets/work_logo/banking.png'; // Add logo for Banking System
-import weatherLogo from './assets/work_logo/weather.png'; // Add logo for Weather App
-import gssocLogo from './assets/company_logo/gssoc_logo.png'; // Add this logo (GirlScript Summer of Code)
-import codameLogo from './assets/company_logo/codame_logo.png'; // Add this logo (Codame IIIT Bhopal)
-import iiitbLogo from './assets/company_logo/iiitb_logo.png'; // Add this logo (IIIT Bhopal)
+import bankingLogo from './assets/work_logo/banking.png';
+import weatherLogo from './assets/work_logo/weather.png';
+import spendquestLogo from './assets/work_logo/spendquest.png';
+import inkthinkLogo from './assets/work_logo/inkthink.png';
+import gssocLogo from './assets/company_logo/gssoc_logo.png';
+import codameLogo from './assets/company_logo/codame_logo.png';
+import iiitbLogo from './assets/company_logo/iiitb_logo.png';
 import leetcode from './assets/coding_logo/leetcode.png'
 import codeforces from './assets/coding_logo/codeforces.png'
 import codechef from './assets/coding_logo/codechef.png'
@@ -129,7 +131,7 @@ export const projects = [
     image: bankingLogo,
     tags: ["C++", "OOP", "DSA"],
     github: "https://github.com/CodeXJainTech/Banking-System",
-    webapp: "",
+    webapp: "https://github.com/CodeXJainTech/Banking-System",
   },
   {
     id: 1,
@@ -138,7 +140,25 @@ export const projects = [
     image: weatherLogo,
     tags: ["HTML", "CSS", "JavaScript", "API"],
     github: "https://github.com/CodeXJainTech/Weather-App",
-    webapp: "",
+    webapp: "https://windy-lake.vercel.app",
+  },
+  {
+    id: 2,
+    title: "SpendQuest",
+    description: "SpendQuest is a lightweight, intuitive app to help users track their expenses and simulate money transfers to friends, payees, or categories. Whether you're splitting lunch, logging a shopping trip, or tracking monthly cash flow — SpendQuest makes personal finance simple and visual.",
+    image: spendquestLogo,
+    tags: ["React", "Node", "Express", "Rest-API", "mongodb"],
+    github: "https://github.com/CodeXJainTech/spendquest-frontend",
+    webapp: "https://spendquest.vercel.app",
+  },
+  {
+    id: 3,
+    title: "Ink & Think",
+    description: "A real-time multiplayer drawing & guessing game (similar to Skribbl.io) where players create or join rooms, take turns drawing, and guess words based on sketches. Built with React, Node.js, and Socket.IO for seamless live interaction.",
+    image: inkthinkLogo,
+    tags: ["React", "node", "socket.IO", "Rest-API", "Express"],
+    github: "https://github.com/CodeXJainTech/Ink-think-frontend",
+    webapp: "https://ink-think.vercel.app",
   },
 ];
 
