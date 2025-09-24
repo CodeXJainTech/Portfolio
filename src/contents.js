@@ -62,8 +62,8 @@ export const SkillsInfo = [
   {
     title: 'Machine Learning',
     skills: [
-      { name: 'TensorFlow', logo: tensorflowLogo },
-      { name: 'Scikit-learn', logo: sklearnLogo },
+      // { name: 'TensorFlow', logo: tensorflowLogo },
+      // { name: 'Scikit-learn', logo: sklearnLogo },
       { name: 'NumPy', logo: numpyLogo },
       { name: 'Pandas', logo: pandasLogo },
       { name: 'Matplotlib', logo: matplotlibLogo },
