@@ -69,7 +69,7 @@ const About = () => {
 
           {/* ------------ View CV Button ------------ */}
           <a
-            href="https://docs.google.com/document/d/1i0F1OBqQ1aOeTiMdWx-kRwg41Xzq3WYTtOT7e1nM3Z4/edit?usp=sharing"
+            href="https://shorturl.at/fFa00"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
