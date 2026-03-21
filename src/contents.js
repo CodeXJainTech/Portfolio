@@ -30,15 +30,30 @@ import iiitbLogo from './assets/company_logo/iiitb_logo.png';
 import leetcode from './assets/coding_logo/leetcode.png'
 import codeforces from './assets/coding_logo/codeforces.png'
 import codechef from './assets/coding_logo/codechef.png'
+import zapLogo from './assets/work_logo/zap.png'
+import housePriceLogo from './assets/work_logo/houseprice.png'
+import aiLogo from './assets/tech_logo/ai.webp'
+import kafkaLogo from './assets/tech_logo/kafka.webp'
+import dockerLogo from './assets/tech_logo/docker.webp'
+import socketLogo from './assets/tech_logo/socket.webp'
+import nextjsLogo from './assets/tech_logo/nextjs.png'
+import tailwindLogo from './assets/tech_logo/tailwindcss.png'
+import postgresLogo from './assets/tech_logo/postgre.png'
+import redisLogo from './assets/tech_logo/redis.webp'
+import prismaLogo from './assets/tech_logo/prisma.webp'
+import tsLogo from './assets/tech_logo/typescript.png'
+import heumanxLogo from './assets/company_logo/heumanx.jpg'
+
 
 export const SkillsInfo = [
   {
     title: 'Frontend',
     skills: [
+      { name: 'React JS', logo: reactLogo },
+      { name: 'Next.js', logo: nextjsLogo },
+      { name: 'TailwindCSS', logo: tailwindLogo },
       { name: 'HTML', logo: htmlLogo },
       { name: 'CSS', logo: cssLogo },
-      { name: 'JavaScript', logo: jsLogo },
-      { name: 'React JS', logo: reactLogo },
     ],
   },
   {
@@ -46,38 +61,47 @@ export const SkillsInfo = [
     skills: [
       { name: 'Node JS', logo: nodeLogo },
       { name: 'Express JS', logo: expressLogo },
+      { name: 'Prisma ORM', logo: prismaLogo },
+      { name: 'PostgreSQL', logo: postgresLogo },
       { name: 'MongoDB', logo: mongodbLogo },
-      { name: 'SQL', logo: sqlLogo },
+      { name: 'Redis', logo: redisLogo },
+    ],
+  },
+  {
+    title: 'System & DevOps',
+    skills: [
+      { name: 'Kafka', logo: kafkaLogo },
+      { name: 'Docker', logo: dockerLogo },
+      { name: 'Socket.IO', logo: socketLogo },
+      { name: 'GitHub Actions', logo: githubLogo },
     ],
   },
   {
     title: 'Languages',
     skills: [
       { name: 'C++', logo: cppLogo },
-      { name: 'C', logo: cLogo },
       { name: 'Python', logo: pythonLogo },
       { name: 'JavaScript', logo: jsLogo },
+      { name: 'TypeScript', logo: tsLogo },
+      { name: 'SQL', logo: sqlLogo },
     ],
   },
   {
     title: 'Machine Learning',
     skills: [
-      // { name: 'TensorFlow', logo: tensorflowLogo },
-      // { name: 'Scikit-learn', logo: sklearnLogo },
-      { name: 'NumPy', logo: numpyLogo },
+      { name: 'Scikit-learn', logo: sklearnLogo },
       { name: 'Pandas', logo: pandasLogo },
-      { name: 'Matplotlib', logo: matplotlibLogo },
+      { name: 'NumPy', logo: numpyLogo },
+      { name: 'Generative AI', logo: aiLogo },
     ],
   },
   {
-    title: 'Dev Tools & Platforms',
+    title: 'Dev Tools',
     skills: [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
-      { name: 'Google Colab', logo: colabLogo },
-      { name: 'Jupyter Notebook', logo: jupyterLogo },
+      { name: 'VS Code', logo: vscodeLogo },
     ],
   },
 ];
@@ -86,18 +110,40 @@ export const SkillsInfo = [
 
 export const experiences = [
   {
+    id: 0,
+    img: heumanxLogo,
+    role: "Backend Developer Intern",
+    company: "HeumanX",
+    date: "Mar 2026 - Present",
+    desc: "Architected a microservices backend across 8 domains, ensuring 100% uptime by isolating database failures. Implemented a Kafka event bus for 18 distributed components to decouple AI inference and achieved sub-second API latency with Redis locking and Hybrid RBAC.",
+    skills: [
+      "Node.js", "PostgreSQL", "Kafka", "Redis", "Docker", "Microservices"
+    ],
+  },
+  {
     id: 1,
+    img: codameLogo,
+    role: "Competitive Programming Lead",
+    company: "Codame Club, IIIT Bhopal",
+    date: "Nov 2025 - Mar 2026",
+    desc: "Spearheaded the organization of 5+ large-scale coding contests for 500+ participants. Authored complex DSA problems and led technical outreach, ensuring 100% on-time execution and fostering a competitive programming ecosystem on campus.",
+    skills: [
+      "C++", "DSA", "Competitive Programming", "Problem Setting", "Management"
+    ],
+  },
+  {
+    id: 2,
     img: codameLogo,
     role: "Executive Member",
     company: "Codame, IIIT Bhopal",
-    date: "Nov 2024 - Present",
-    desc: "Conducted 4+ coding contests and authored 5+ problems to promote competitive programming. Led 7+ up-solving sessions for 100+ juniors and ranked top 15 in a 200-member batch for contest performance.",
+    date: "Nov 2024 - Nov 2025",
+    desc: "Conducted coding contests and authored problems to promote competitive programming. Led up-solving sessions for 100+ juniors and ranked top 15 in a 200-member batch for contest performance.",
     skills: [
       "C++", "DSA", "Competitive Programming", "Leadership"
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: iiitbLogo,
     role: "Teaching Assistant - OOP",
     company: "IIIT Bhopal",
@@ -108,7 +154,7 @@ export const experiences = [
     ],
   },
   {
-    id: 0,
+    id: 4,
     img: gssocLogo,
     role: "Contributor",
     company: "GirlScript Summer of Code",
@@ -126,24 +172,15 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
-    title: "Banking System",
-    description: "A C++ terminal-based banking system using STL and OOP for account creation, modification, and secure transactions with real-time balance management.",
-    image: bankingLogo,
-    tags: ["C++", "OOP", "DSA"],
-    github: "https://github.com/CodeXJainTech/Banking-System",
-    webapp: "https://github.com/CodeXJainTech/Banking-System",
+    title: "Zap",
+    description: "A workflow automation platform inspired by Zapier. It features user-defined trigger-action sequences powered by a Kafka-based event pipeline for fault-tolerant, asynchronous task execution and Prisma ORM for relational data management.",
+    image: zapLogo, // Replace with your actual variable
+    tags: ["Next.js", "TypeScript", "Kafka", "Prisma", "PostgreSQL", "Node.js"],
+    github: "https://github.com/CodeXJainTech/Zap-project",
+    webapp: "https://github.com/CodeXJainTech/Zap-project",
   },
   {
     id: 1,
-    title: "Weather App",
-    description: "A responsive web app using OpenWeatherMap API, displaying real-time weather data for 100+ cities. Clean UI with intuitive input and graceful error handling.",
-    image: weatherLogo,
-    tags: ["HTML", "CSS", "JavaScript", "API"],
-    github: "https://github.com/CodeXJainTech/Weather-App",
-    webapp: "https://windy-lake.vercel.app",
-  },
-  {
-    id: 2,
     title: "SpendQuest",
     description: "SpendQuest is a lightweight, intuitive app to help users track their expenses and simulate money transfers to friends, payees, or categories. Whether you're splitting lunch, logging a shopping trip, or tracking monthly cash flow — SpendQuest makes personal finance simple and visual.",
     image: spendquestLogo,
@@ -152,7 +189,7 @@ export const projects = [
     webapp: "https://spendquest.vercel.app",
   },
   {
-    id: 3,
+    id: 2,
     title: "Ink & Think",
     description: "A real-time multiplayer drawing & guessing game (similar to Skribbl.io) where players create or join rooms, take turns drawing, and guess words based on sketches. Built with React, Node.js, and Socket.IO for seamless live interaction.",
     image: inkthinkLogo,
@@ -160,6 +197,33 @@ export const projects = [
     github: "https://github.com/CodeXJainTech/Ink-think-frontend",
     webapp: "https://ink-think.vercel.app",
   },
+  {
+    id: 3,
+    title: "House Price Prediction",
+    description: "A machine learning application that predicts housing prices in Bengaluru. It utilizes Linear, Ridge, and Lasso Regression models achieving an 0.80 R² score, with a Flask backend to serve predictions based on processed real-world datasets.",
+    image: housePriceLogo,
+    tags: ["Python", "Machine Learning", "scikit-learn", "Flask", "Pandas"],
+    github: "https://github.com/CodeXJainTech/House-price-prediction",
+    webapp: "https://house-price-prediction-9o82.onrender.com/",
+  },
+  {
+    id: 4,
+    title: "Banking System",
+    description: "A C++ terminal-based banking system using STL and OOP for account creation, modification, and secure transactions with real-time balance management.",
+    image: bankingLogo,
+    tags: ["C++", "OOP", "DSA"],
+    github: "https://github.com/CodeXJainTech/Banking-System",
+    webapp: "https://github.com/CodeXJainTech/Banking-System",
+  },
+  {
+    id: 5,
+    title: "Weather App",
+    description: "A responsive web app using OpenWeatherMap API, displaying real-time weather data for 100+ cities. Clean UI with intuitive input and graceful error handling.",
+    image: weatherLogo,
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    github: "https://github.com/CodeXJainTech/Weather-App",
+    webapp: "https://windy-lake.vercel.app",
+  }
 ];
 
 
