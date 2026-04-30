@@ -115,7 +115,7 @@ export const experiences = [
     id: 0,
     img: heumanxLogo,
     role: "Backend Developer Intern",
-    company: "HeumanX",
+    company: "HuemanX",
     date: "Mar 2026 - Present",
     desc: "Architected a microservices backend across 8 domains, ensuring 100% uptime by isolating database failures. Implemented a Kafka event bus for 18 distributed components to decouple AI inference and achieved sub-second API latency with Redis locking and Hybrid RBAC.",
     skills: [
