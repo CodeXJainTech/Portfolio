@@ -43,6 +43,8 @@ import redisLogo from './assets/tech_logo/redis.webp'
 import prismaLogo from './assets/tech_logo/prisma.webp'
 import tsLogo from './assets/tech_logo/typescript.png'
 import heumanxLogo from './assets/company_logo/heumanx.jpg'
+import codeCollabLogo from './assets/work_logo/codeCollab.png'
+import kryptLogo from './assets/work_logo/krypt.png'
 
 
 export const SkillsInfo = [
@@ -181,15 +183,24 @@ export const projects = [
   },
   {
     id: 1,
-    title: "SpendQuest",
-    description: "SpendQuest is a lightweight, intuitive app to help users track their expenses and simulate money transfers to friends, payees, or categories. Whether you're splitting lunch, logging a shopping trip, or tracking monthly cash flow — SpendQuest makes personal finance simple and visual.",
-    image: spendquestLogo,
-    tags: ["React", "Node", "Express", "Rest-API", "mongodb"],
-    github: "https://github.com/CodeXJainTech/spendquest-frontend",
-    webapp: "https://spendquest.vercel.app",
+    title: "Code Collab",
+    description: "A real-time collaborative code editor supporting simultaneous multi-user editing via WebSockets and Operational Transformation. It features a sandboxed code execution pipeline for secure, multi-language code runs and a Redis-backed distributed architecture that optimizes presence sync and reduces conflict resolution time by 90%.",
+    image: codeCollabLogo, // Replace with your actual variable
+    tags: ["React", "TypeScript", "Node.js", "Redis", "PostgreSQL", "Piston"],
+    github: "https://github.com/CodeXJainTech/collab-editor",
+    webapp: "https://codecollabify.vercel.app/",
   },
   {
     id: 2,
+    title: "Krypt: E2EE Chat App",
+    description: "A military-grade, End-to-End Encrypted (E2EE) messaging platform built on a Zero-Trust architecture. It features SRP-6a authentication, ECDH key exchange, and a SHA-256 double-ratchet for perfect forward secrecy, utilizing a custom C++ WebAssembly engine for high-performance client-side AES encryption.",
+    image: kryptLogo, // Replace with your actual variable
+    tags: ["React", "TypeScript", "WebAssembly (C++)", "Web Crypto API", "ECDH", "AES-256-GCM", "SRP-6a", "Ratchet Protocol"],
+    github: "https://github.com/CodeXJainTech/minor-project-Krypt",
+    webapp: "https://github.com/CodeXJainTech/minor-project-Krypt",
+  },
+  {
+    id: 3,
     title: "Ink & Think",
     description: "A real-time multiplayer drawing & guessing game (similar to Skribbl.io) where players create or join rooms, take turns drawing, and guess words based on sketches. Built with React, Node.js, and Socket.IO for seamless live interaction.",
     image: inkthinkLogo,
@@ -198,7 +209,16 @@ export const projects = [
     webapp: "https://ink-think.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
+    title: "SpendQuest",
+    description: "SpendQuest is a lightweight, intuitive app to help users track their expenses and simulate money transfers to friends, payees, or categories. Whether you're splitting lunch, logging a shopping trip, or tracking monthly cash flow — SpendQuest makes personal finance simple and visual.",
+    image: spendquestLogo,
+    tags: ["React", "Node", "Express", "Rest-API", "mongodb"],
+    github: "https://github.com/CodeXJainTech/spendquest-frontend",
+    webapp: "https://spendquest.vercel.app",
+  },
+  {
+    id: 5,
     title: "House Price Prediction",
     description: "A machine learning application that predicts housing prices in Bengaluru. It utilizes Linear, Ridge, and Lasso Regression models achieving an 0.80 R² score, with a Flask backend to serve predictions based on processed real-world datasets.",
     image: housePriceLogo,
@@ -207,7 +227,7 @@ export const projects = [
     webapp: "https://house-price-prediction-9o82.onrender.com/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Banking System",
     description: "A C++ terminal-based banking system using STL and OOP for account creation, modification, and secure transactions with real-time balance management.",
     image: bankingLogo,
@@ -216,7 +236,7 @@ export const projects = [
     webapp: "https://github.com/CodeXJainTech/Banking-System",
   },
   {
-    id: 5,
+    id: 7,
     title: "Weather App",
     description: "A responsive web app using OpenWeatherMap API, displaying real-time weather data for 100+ cities. Clean UI with intuitive input and graceful error handling.",
     image: weatherLogo,
